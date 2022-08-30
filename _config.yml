@@ -1,3 +1,6 @@
-theme : 
+theme : minima
 title : Planen
 description : Aplikasi schedule
+
+markdown: kramdown
+remote_theme : benbalter/retlab
