@@ -6,13 +6,17 @@ Kategori Aplikasi	: Edukasi
 
 Tipe aplikasi		  : Aplikasi Desktop
 
-NAMA KELOMPOK
+
+*Nama Kelompok*
 
 Richard Haryson     - 20/456378/TK/50508 
 
 Miftahul Jannah     - 20/456845/TK/50669 
 
 Fajar Rizky Widodo  - 20/463599/TK/51591 
+
+*PROJECT JUNIOR TEKNOLOGI INFORMASI*
+*Departemen Teknik Elektro dan Teknologi Informasi, Fakultas Teknik, Universitas Gadjah Mada"
 
 Planen adalah aplikasi yang membantu pengguna menyusun dan mengatur jadwal. Pengguna dapat memasukkan jadwal-jadwalnya di aplikasi ini dan tidak perlu takut bahwa akan ada jadwal yang bertabrakan karena aplikasi ini bisa mendeteksi jadwal yang bertabrakan sebelum jadwal itu disimpan di database. Sehingga jadwal-jadwal yang  berhasil tersimpan dipastikan tidak bertabrakan. Selain itu aplikasi ini juga memiliki fitur catatan, sehingga pengguna tidak perlu keluar dari aplikasi jika ingin memebuat catatan mengenai jadwal.
 
