@@ -22,6 +22,7 @@ Aplikasi yang kami usulkan menyediakan sarana untuk mengorganisir kegiatan-kegia
 Google Calendar, Trello, Microsoft To Do
 
 **Use case**
+
 ![use case](https://user-images.githubusercontent.com/79750744/189670334-5959ef4e-b57b-4366-aec3-85c89d522835.PNG)
 
 **Activity Diagram**
@@ -29,12 +30,15 @@ Google Calendar, Trello, Microsoft To Do
 Login/Register
 
 Add activity
+
 ![add act drawio](https://user-images.githubusercontent.com/79750744/189667056-0114b46b-d88d-40fe-9520-25b38b999c09.png)
 
 Display schedule
 
 Edit Activity
+
 ![edit act drawio (2)](https://user-images.githubusercontent.com/79750744/189672318-f51fcee0-51c4-42eb-ac77-7dbc027dc804.png)
 
 Class Diagram
+
 ![class diagram bener nih](https://user-images.githubusercontent.com/79750744/189671439-c7fbf821-f3c8-45c0-8832-3d91628b2521.PNG)
