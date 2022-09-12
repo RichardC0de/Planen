@@ -24,6 +24,7 @@ Google Calendar, Trello, Microsoft To Do
 ![use case](https://user-images.githubusercontent.com/79750744/189670334-5959ef4e-b57b-4366-aec3-85c89d522835.PNG)
 
 **Activity Diagram** </br>
+
 Login/Register </br>
 
 Add activity </br>
