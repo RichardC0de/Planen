@@ -14,6 +14,8 @@ Miftahul Jannah     - 20/456845/TK/50669
 
 Fajar Rizky Widodo  - 20/463599/TK/51591 
 
+Planen adalah aplikasi yang membantu pengguna menyusun dan mengatur jadwal. Pengguna dapat memasukkan jadwal-jadwalnya di aplikasi ini dan tidak perlu takut bahwa akan ada jadwal yang bertabrakan karena aplikasi ini bisa mendeteksi jadwal yang bertabrakan sebelum jadwal itu disimpan di database. Sehingga jadwal-jadwal yang  berhasil tersimpan dipastikan tidak bertabrakan. Selain itu aplikasi ini juga memiliki fitur catatan, sehingga pengguna tidak perlu keluar dari aplikasi jika ingin memebuat catatan mengenai jadwal.
+
 **Permasalahan yang Diangkat** 
 
 Bagi siswa, scheduling sangat dibutuhkan untuk menyusun atau mengatur jadwal terutama untuk kegiatan sekolah, kuliah, dan kegiatan pribadi lainnya. Namun, tidak jarang siswa yang kesulitan dalam mengorganisir jadwal atau adanya inkonsistensi dalam membuat scheduling. Salah satu faktor yang menyebabkan siswa tidak konsisten adalah kepadatan waktu sehingga tidak sempat menyusun jadwal dan kurang praktisnya aplikasi penjadwalan (fitur terlalu kompleks dan membuat bingung). Akibatnya, banyak jadwal siswa menjadi kurang terorganisir dan bisa berakibat ia lupa akan jadwal kegiatan yang seharusnya dilakukan.
