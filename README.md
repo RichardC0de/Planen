@@ -58,4 +58,5 @@ Edit Activity
 
 Class Diagram 
 
-![class diagram bener nih](https://user-images.githubusercontent.com/79750744/189671439-c7fbf821-f3c8-45c0-8832-3d91628b2521.PNG)
+![clas bener](https://user-images.githubusercontent.com/79750744/189799503-9fda933c-095f-48f9-85ba-5eceeafd8855.PNG)
+
