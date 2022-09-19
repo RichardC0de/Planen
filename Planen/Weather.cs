@@ -9,7 +9,8 @@ namespace Planen
 {
     class Weather
     {
-        private XmlAnyAttributeAttribute API;
+        private XmlAnyAttributeAttribute weatherAPI;
+        public XmlAnyAttributeAttribute WetaherAPI { get { return weatherAPI; } set { weatherAPI = value; } }   
         public void getWeatherAPI(XmlAnyAttributeAttribute API) { }
     }
 }
