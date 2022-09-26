@@ -60,3 +60,7 @@ Class Diagram
 
 ![clas bener](https://user-images.githubusercontent.com/79750744/189799503-9fda933c-095f-48f9-85ba-5eceeafd8855.PNG)
 
+Entity Relationship Diagram (ERD)
+
+![ERD](https://user-images.githubusercontent.com/79750744/192333330-3e88319e-701c-4108-b918-7962535900d6.jpg)
+
