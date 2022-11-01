@@ -10,3 +10,18 @@ D:\Semester 5\JunPro\Planen\Planen\obj\Debug\Planen.csproj.CoreCompileInputs.cac
 D:\Semester 5\JunPro\Planen\Planen\obj\Debug\Planen.exe
 D:\Semester 5\JunPro\Planen\Planen\obj\Debug\Planen.pdb
 D:\Semester 5\JunPro\Planen\Planen\obj\Debug\Planen.UserControlDays.resources
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\bin\Debug\Planen.exe.config
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\bin\Debug\Planen.exe
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\bin\Debug\Planen.pdb
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.csproj.AssemblyReference.cache
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.Properties.Resources.resources
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.UserControlBlank.resources
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.UserControlDays.resources
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.csproj.GenerateResource.cache
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.exe
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.pdb
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.MainForm.resources
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.LoginForm.resources
+C:\Users\DELL\Downloads\Planen-main\Planen-main\App\Planen\Planen\obj\Debug\Planen.SignUpForm.resources
