@@ -6,20 +6,35 @@ using System.Threading.Tasks;
 
 namespace Planen
 {
-    class Event
+    public class Event
     {
-        private int eventID;
-        private DateTime tanggalEvent;
-        private TimeOnly waktu;
-        private string namaEvent;
-        private string deskripsi;
-        public int EventID { get { return eventID; } }
-        public DateTime TanggalEvent { get { return tanggalEvent; } set { tanggalEvent = value; } }
-        public TimeOnly Waktu { get { return waktu; } set { waktu = value; } }
-        public string NamaEvent { get { return namaEvent; } set { namaEvent = value; } }
-        public string Deskripsi { get { return deskripsi} set { deskripsi = value; } }
+        private int _eventID;
+        private DateTime _tanggalEvent;
+        private TimeOnly _waktu;
+        private string _namaEvent;
+        private string _deskripsi;
+        public int EventID { get { return _eventID; } set { EventID = value; } }
+        public DateTime TanggalEvent { get { return _tanggalEvent; } set { _tanggalEvent = value; } }
+        public TimeOnly Waktu { get { return _waktu; } set { _waktu = value; } }
+        public string NamaEvent { get { return _namaEvent; } set { _namaEvent = value; } }
+        public string Deskripsi { get { return _deskripsi; } set { _deskripsi = value; } }
+        public Event(int eventID, DateTime tanggalEvent, TimeOnly waktu, string namaEvent, string deskripsi)
+        {
+            this._eventID = eventID;
+            TanggalEvent = tanggalEvent;
+            Waktu = waktu;
+            NamaEvent = namaEvent;
+            Deskripsi = deskripsi;
+            TanggalEvent = tanggalEvent;
+            Waktu = waktu;
+            NamaEvent = namaEvent;
+            Deskripsi = deskripsi;
+        }
+
         public void getEvent() { }
-        public void saveEvent() { }
+        public void saveEvent() {
+
+        }
         public void editEvent() { }
     }
 }

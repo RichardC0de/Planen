@@ -37,7 +37,4 @@ namespace Planen
         public void Login() { }
     }
     //Property Definition
-
-   
-
 }

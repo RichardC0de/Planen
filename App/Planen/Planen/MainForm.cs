@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Globalization;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Planen
 {
     public partial class MainForm : Form
     {
         int month, year;
+        public NpgsqlConnection conn;
+        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=psqlf;Database=planen";
+        public static NpgsqlCommand cmd;
+        private string sql = null;
         public MainForm()
         {
             InitializeComponent();
@@ -19,6 +25,8 @@ namespace Planen
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            conn = new NpgsqlConnection(connstring);
+            conn.Open();
             displayDays();
         }
         private void displayDays()
@@ -321,13 +329,38 @@ namespace Planen
 
         }
 
+        private void LBDATE_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnAddEvent_Click(object sender, EventArgs e)
+        {
+            AddEventForm addEventForm = new AddEventForm();
+            addEventForm.Show();
+            this.Hide();   
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //hapus semua data event di calendar;
+                sql = "select * from event_select()";
+                cmd = new NpgsqlCommand(sql, conn);
+                NpgsqlDataReader rd = cmd.ExecuteReader();
+                //rd digunakan sebagai input untuk fungsi yang menampilkan event di calendar
+                //fungsi tsb sementara belum jadi :'
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void panel42_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-
     }
 }
