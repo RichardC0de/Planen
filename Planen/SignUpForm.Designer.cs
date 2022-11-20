@@ -119,7 +119,7 @@ namespace Planen
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-57, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-93, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1035, 484);
@@ -142,7 +142,7 @@ namespace Planen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(915, 480);
+            this.ClientSize = new System.Drawing.Size(846, 480);
             this.Controls.Add(this.btn_backLogin);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.tbUsername);
@@ -154,6 +154,7 @@ namespace Planen
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SignUpForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNew";
             this.Load += new System.EventHandler(this.FormNew_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

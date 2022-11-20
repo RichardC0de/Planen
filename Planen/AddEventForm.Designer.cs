@@ -46,56 +46,50 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(76, 79);
-            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Location = new System.Drawing.Point(38, 43);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(53, 17);
+            this.lblName.Size = new System.Drawing.Size(41, 13);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name :";
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(76, 132);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDate.Location = new System.Drawing.Point(38, 86);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(46, 17);
+            this.lblDate.Size = new System.Drawing.Size(36, 13);
             this.lblDate.TabIndex = 3;
             this.lblDate.Text = "Date :";
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(153, 74);
-            this.tbName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbName.Location = new System.Drawing.Point(95, 39);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(265, 22);
+            this.tbName.Size = new System.Drawing.Size(200, 20);
             this.tbName.TabIndex = 5;
             // 
             // tbDeskripsi
             // 
-            this.tbDeskripsi.Location = new System.Drawing.Point(183, 214);
-            this.tbDeskripsi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbDeskripsi.Location = new System.Drawing.Point(118, 153);
             this.tbDeskripsi.Name = "tbDeskripsi";
-            this.tbDeskripsi.Size = new System.Drawing.Size(236, 117);
+            this.tbDeskripsi.Size = new System.Drawing.Size(178, 96);
             this.tbDeskripsi.TabIndex = 6;
             this.tbDeskripsi.Text = "";
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(77, 218);
-            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescription.Location = new System.Drawing.Point(38, 156);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(87, 17);
+            this.lblDescription.Size = new System.Drawing.Size(66, 13);
             this.lblDescription.TabIndex = 7;
             this.lblDescription.Text = "Description :";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(80, 369);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(40, 279);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 28);
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -103,10 +97,9 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(319, 369);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(40, 308);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(100, 28);
+            this.btnCancel.Size = new System.Drawing.Size(254, 23);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -115,17 +108,17 @@
             // tbDate
             // 
             this.tbDate.Enabled = false;
-            this.tbDate.Location = new System.Drawing.Point(153, 129);
-            this.tbDate.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDate.Location = new System.Drawing.Point(95, 84);
             this.tbDate.Name = "tbDate";
-            this.tbDate.Size = new System.Drawing.Size(265, 22);
+            this.tbDate.Size = new System.Drawing.Size(200, 20);
             this.tbDate.TabIndex = 10;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(200, 369);
+            this.btnUpdate.Location = new System.Drawing.Point(130, 279);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(100, 28);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -133,9 +126,10 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(201, 412);
+            this.btnDelete.Location = new System.Drawing.Point(220, 279);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(99, 28);
+            this.btnDelete.Size = new System.Drawing.Size(74, 23);
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -145,17 +139,18 @@
             // 
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-25, -59);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1069, 557);
+            this.pictureBox1.Size = new System.Drawing.Size(763, 438);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
             // AddEventForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(721, 362);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.tbDate);
@@ -167,8 +162,8 @@
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddEventForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddEventForm";
             this.Load += new System.EventHandler(this.AddEventForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
