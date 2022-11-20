@@ -62,8 +62,8 @@ namespace Planen
                 {
                     MessageBox.Show("Selamat! Akun anda berhasil dibuat.", "well done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //Account.UserID = (int)cmd.ExecuteScalar();
-                    MainForm mainForm = new MainForm(account);
-                    mainForm.Show();
+                    LoginForm loginForm = new LoginForm();
+                    loginForm.Show();
                     this.Hide();
                 }
             }
