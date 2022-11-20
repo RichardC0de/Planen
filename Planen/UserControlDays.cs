@@ -48,9 +48,10 @@ namespace Planen
             conn = new NpgsqlConnection(connstring);
             conn.Open();
             //cmd.CommandText = string.Format("SELECT * FROM event WHERE tanggal_event = ?");
-            sql = "select nama_event from event where tanggal_event = :_tanggal_event";
+            sql = "select nama_event from event where tanggal_event = :_tanggal_event and account_id = :_account_id";
             cmd = new NpgsqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("_tanggal_event", MainForm.static_month + "/" + lbdays.Text + "/" + MainForm.static_year);
+            cmd.Parameters.AddWithValue("_account_id", Account.UserID);
             NpgsqlDataReader reader = cmd.ExecuteReader();
             if (reader.Read())
             {

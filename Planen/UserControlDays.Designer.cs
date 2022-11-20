@@ -50,7 +50,7 @@ namespace Planen
             this.lb_event.Location = new System.Drawing.Point(4, 48);
             this.lb_event.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_event.Name = "lb_event";
-            this.lb_event.Size = new System.Drawing.Size(148, 27);
+            this.lb_event.Size = new System.Drawing.Size(148, 31);
             this.lb_event.TabIndex = 1;
             this.lb_event.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

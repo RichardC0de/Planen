@@ -36,7 +36,9 @@ namespace Planen
             conn = new NpgsqlConnection(connstring);
             conn.Open();
             displayDays();
-            
+            MainForm mainform = new MainForm();
+            this.Hide();
+
         }
         private void displayDays()
         {
@@ -363,6 +365,20 @@ namespace Planen
             //this.Hide();
         }
 
+        private void bt_refresh_Click(object sender, EventArgs e)
+        {
+            MainForm mainform = new MainForm();
+            mainform.Show();
+            this.Hide();
+        }
+
+        private void btn_CA_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
+        }
+
         private void btnLoad_Click(object sender, EventArgs e)
         {
             try
@@ -384,5 +400,6 @@ namespace Planen
         {
 
         }
+
     }
 }

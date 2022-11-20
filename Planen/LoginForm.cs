@@ -52,7 +52,7 @@ namespace Planen
             {
                 MessageBox.Show("Selamat Datang!", "well done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Account account = new Account();
-                account.UserID = (int)cmd.ExecuteScalar();
+                Account.UserID = (int)cmd.ExecuteScalar();
                 MainForm mainForm = new MainForm(account);
                 mainForm.Show();
                 this.Hide();

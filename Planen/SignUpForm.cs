@@ -34,14 +34,14 @@ namespace Planen
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            try 
+            try
             {
                 //sql = "select account_id from account where email=:_email";
                 //cmd = new NpgsqlCommand(sql, conn);
                 //cmd.Parameters.AddWithValue("_email", tbEmail.Text);
                 //if ((int)cmd.ExecuteScalar() == 0)
                 //{
-                    
+
                 //}
                 //else if ((int)cmd.ExecuteScalar() > 0)
                 //{
@@ -62,7 +62,7 @@ namespace Planen
                 if ((int)cmd.ExecuteScalar() > 0)
                 {
                     MessageBox.Show("Selamat! Akun anda berhasil dibuat.", "well done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    account.UserID = (int)cmd.ExecuteScalar(); 
+                    Account.UserID = (int)cmd.ExecuteScalar();
                     MainForm mainForm = new MainForm(account);
                     mainForm.Show();
                     this.Hide();

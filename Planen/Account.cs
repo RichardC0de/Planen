@@ -9,11 +9,11 @@ namespace Planen
     public class Account
     {
         //Property
-        private int _userID;
+        private static int _userID;
         private string _username;
         private string _password;
         private string _email;
-        public int UserID
+        public static int UserID
         {
             get { return _userID; }
             set { _userID = value; }
