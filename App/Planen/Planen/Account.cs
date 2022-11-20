@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Planen
 {
-    class Account
+    public class Account
     {
         //Property
         private int _userID;
@@ -16,6 +16,7 @@ namespace Planen
         public int UserID
         {
             get { return _userID; }
+            set { _userID = value; }
         }
         public string Username
         {
@@ -37,7 +38,4 @@ namespace Planen
         public void Login() { }
     }
     //Property Definition
-
-   
-
 }
