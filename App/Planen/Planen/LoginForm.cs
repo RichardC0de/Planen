@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Planen
 {
     public partial class LoginForm : Form
     {
+        public NpgsqlConnection conn;
+        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=psqlf;Database=planen";
+        public static NpgsqlCommand cmd;
+        //public static NpgsqlCommand cmd2;
+        private string sql = "";
         public LoginForm()
         {
             InitializeComponent();
@@ -24,7 +30,8 @@ namespace Planen
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            conn = new NpgsqlConnection(connstring);
+            conn.Open();
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
@@ -36,9 +43,22 @@ namespace Planen
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
-            this.Hide();
+            sql = "select account_id from account where email=:_email and password=:_password";
+            cmd = new NpgsqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("_password", tbPassword.Text);
+            cmd.Parameters.AddWithValue("_email", tbEmail.Text);
+            if ((int)cmd.ExecuteScalar() > 1)
+            {
+                MessageBox.Show("Selamat Datang!", "well done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Account account = new Account();
+                account.UserID = (int)cmd.ExecuteScalar();
+                MainForm mainForm = new MainForm(account);
+                mainForm.Show();
+                this.Hide();
+            }
+            //MainForm mainForm = new MainForm();
+            //mainForm.Show();
+            //this.Hide();
         }
     }
 }

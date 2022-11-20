@@ -13,6 +13,12 @@ namespace Planen
         string connstring = "Host=localhost;Port=5432;Username=postgres;Password=psqlf;Database=planen";
         public static NpgsqlCommand cmd;
         private string sql = null;
+        Account account;
+        public MainForm(Account account)
+        {
+            InitializeComponent();
+            this.account = account;
+        }
         public MainForm()
         {
             InitializeComponent();

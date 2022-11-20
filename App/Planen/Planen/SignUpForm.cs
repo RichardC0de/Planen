@@ -18,8 +18,9 @@ namespace Planen
         public NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;Username=postgres;Password=psqlf;Database=planen";
         public static NpgsqlCommand cmd;
-        public static NpgsqlCommand cmd2;
+        //public static NpgsqlCommand cmd2;
         private string sql = null;
+        Account account;
         public SignUpForm()
         {
             InitializeComponent();
@@ -38,20 +39,34 @@ namespace Planen
                 //sql = "select account_id from account where email=:_email";
                 //cmd = new NpgsqlCommand(sql, conn);
                 //cmd.Parameters.AddWithValue("_email", tbEmail.Text);
-                //if ((int)cmd.ExecuteScalar() > 0)
+                //if ((int)cmd.ExecuteScalar() == 0)
+                //{
+                    
+                //}
+                //else if ((int)cmd.ExecuteScalar() > 0)
                 //{
                 //    MessageBox.Show("Email sudah didaftarkan. Silahkan log in.", "!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //    LoginForm loginForm = new LoginForm();
+                //    loginForm.Show();
+                //    this.Hide();
                 //}
-                //sql = null;
+
+                sql = "";
+                //cmd = null;
+
                 sql = "select * from account_insert(:_username, :_password, :_email)";
-                cmd2 = new NpgsqlCommand(sql, conn);
-                cmd2.Parameters.AddWithValue("_username", tbUsername.Text);
-                cmd2.Parameters.AddWithValue("_password", tbPassword.Text);
-                cmd2.Parameters.AddWithValue("_email", tbEmail.Text);
-                if ((int)cmd.ExecuteScalar() == 1)
+                cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("_username", tbUsername.Text);
+                cmd.Parameters.AddWithValue("_password", tbPassword.Text);
+                cmd.Parameters.AddWithValue("_email", tbEmail.Text);
+                if ((int)cmd.ExecuteScalar() > 0)
                 {
-                    MessageBox.Show("Selamat! akun anda berhasil dibuat.", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }    
+                    MessageBox.Show("Selamat! Akun anda berhasil dibuat.", "well done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    account.UserID = (int)cmd.ExecuteScalar(); 
+                    MainForm mainForm = new MainForm(account);
+                    mainForm.Show();
+                    this.Hide();
+                }
             }
             catch (Exception ex)
             {
