@@ -36,6 +36,7 @@ namespace Planen
             conn = new NpgsqlConnection(connstring);
             conn.Open();
             displayDays();
+            
         }
         private void displayDays()
         {
@@ -45,6 +46,9 @@ namespace Planen
 
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + " " + year;
+
+            static_month = month;
+            static_year = year;
 
             DateTime startofthemonth = new DateTime(year, month, 1);
 
@@ -71,11 +75,11 @@ namespace Planen
             daycontainer.Controls.Clear();
 
             month++;
+            static_month = month;
+            static_year = year;
+
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + " " + year;
-
-            //static_month = month;
-            //static_year = year;
 
             DateTime startofthemonth = new DateTime(year, month, 1);
 
@@ -103,6 +107,10 @@ namespace Planen
             daycontainer.Controls.Clear();
 
             month--;
+
+            static_month = month;
+            static_year = year;
+
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + " " + year;
 
@@ -352,7 +360,7 @@ namespace Planen
         {
             AddEventForm addEventForm = new AddEventForm();
             addEventForm.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnLoad_Click(object sender, EventArgs e)

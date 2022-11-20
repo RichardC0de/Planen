@@ -14,7 +14,7 @@ namespace Planen
     public partial class UserControlDays : UserControl
     {
         public static string static_day;
-
+        public string cobadays;
         public NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;Username=postgres;Password=124578;Database=planen";
         public static NpgsqlCommand cmd;
@@ -27,7 +27,7 @@ namespace Planen
 
         private void UserControlDays_Load(object sender, EventArgs e)
         {
-
+            displayEvent();
         }
 
         public void days(int numday)
@@ -43,10 +43,24 @@ namespace Planen
             addEventForm.Show();
 
         }
-        private void displayEvent()
+        public void displayEvent()
         {
-         
+            conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            //cmd.CommandText = string.Format("SELECT * FROM event WHERE tanggal_event = ?");
+            sql = "select nama_event from event where tanggal_event = :_tanggal_event";
+            cmd = new NpgsqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("_tanggal_event", MainForm.static_month + "/" + lbdays.Text + "/" + MainForm.static_year);
+            NpgsqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                lb_event.Text = reader["nama_event"].ToString();
+            }
+            reader.Dispose();
+            conn.Dispose();
+            conn.Close();
         }
+
 
         private void timer1_Tick(object sender, EventArgs e)
         {

@@ -17,6 +17,7 @@ namespace Planen
         string connstring = "Host=localhost;Port=5432;Username=postgres;Password=124578;Database=planen";
         public static NpgsqlCommand cmd;
         private string sql = null;
+
         public AddEventForm()
         {
             InitializeComponent();
@@ -33,13 +34,14 @@ namespace Planen
             {
                 MessageBox.Show("Error: " + ex.Message, "Fail!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            tbDate.Text = MainForm.static_month + "/" + UserControlDays.static_day + "/" + MainForm.static_year;
 
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            MainForm mainForm = new MainForm();
-            mainForm.Show();
+            //MainForm mainForm = new MainForm();
+            //mainForm.Show();
             this.Hide();
         }
 
@@ -49,7 +51,7 @@ namespace Planen
             {
                 sql = "select * from event_insert(:_tanggal_event,:_nama_event,:_deskripsi)";
                 cmd = new NpgsqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("_tanggal_event", dtpTanggal.Value);
+                cmd.Parameters.AddWithValue("_tanggal_event", tbDate.Text);
                 //cmd.Parameters.AddWithValue("_waktu", dtpWaktu.Value);
                 cmd.Parameters.AddWithValue("_nama_event", tbName.Text);
                 cmd.Parameters.AddWithValue("_deskripsi", tbDeskripsi.Text);
@@ -57,6 +59,8 @@ namespace Planen
                 {
                     MessageBox.Show("Data Event berhasil diinputkan!", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                cmd.Dispose();
+                conn.Close();
             }
             catch (Exception ex)
             {

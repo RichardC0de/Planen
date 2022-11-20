@@ -29,72 +29,68 @@
         private void InitializeComponent()
         {
             this.lblName = new System.Windows.Forms.Label();
-            this.dtpTanggal = new System.Windows.Forms.DateTimePicker();
             this.lblDate = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
             this.tbDeskripsi = new System.Windows.Forms.RichTextBox();
             this.lblDescription = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.tbDate = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(57, 64);
+            this.lblName.Location = new System.Drawing.Point(76, 79);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(41, 13);
+            this.lblName.Size = new System.Drawing.Size(53, 17);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name :";
-            // 
-            // dtpTanggal
-            // 
-            this.dtpTanggal.CustomFormat = "";
-            this.dtpTanggal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTanggal.Location = new System.Drawing.Point(115, 105);
-            this.dtpTanggal.Name = "dtpTanggal";
-            this.dtpTanggal.Size = new System.Drawing.Size(200, 20);
-            this.dtpTanggal.TabIndex = 1;
-            this.dtpTanggal.Value = new System.DateTime(2022, 11, 20, 0, 0, 0, 0);
             // 
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(57, 107);
+            this.lblDate.Location = new System.Drawing.Point(76, 132);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(36, 13);
+            this.lblDate.Size = new System.Drawing.Size(46, 17);
             this.lblDate.TabIndex = 3;
             this.lblDate.Text = "Date :";
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(115, 60);
+            this.tbName.Location = new System.Drawing.Point(153, 74);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(200, 20);
+            this.tbName.Size = new System.Drawing.Size(265, 22);
             this.tbName.TabIndex = 5;
             // 
             // tbDeskripsi
             // 
-            this.tbDeskripsi.Location = new System.Drawing.Point(137, 174);
+            this.tbDeskripsi.Location = new System.Drawing.Point(183, 214);
+            this.tbDeskripsi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbDeskripsi.Name = "tbDeskripsi";
-            this.tbDeskripsi.Size = new System.Drawing.Size(178, 96);
+            this.tbDeskripsi.Size = new System.Drawing.Size(236, 117);
             this.tbDeskripsi.TabIndex = 6;
             this.tbDeskripsi.Text = "";
             // 
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(58, 177);
+            this.lblDescription.Location = new System.Drawing.Point(77, 218);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(66, 13);
+            this.lblDescription.Size = new System.Drawing.Size(87, 17);
             this.lblDescription.TabIndex = 7;
             this.lblDescription.Text = "Description :";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(60, 300);
+            this.btnSave.Location = new System.Drawing.Point(80, 369);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(100, 28);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -102,27 +98,38 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(239, 300);
+            this.btnCancel.Location = new System.Drawing.Point(319, 369);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(100, 28);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // tbDate
+            // 
+            this.tbDate.Enabled = false;
+            this.tbDate.Location = new System.Drawing.Point(153, 129);
+            this.tbDate.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDate.Name = "tbDate";
+            this.tbDate.Size = new System.Drawing.Size(265, 22);
+            this.tbDate.TabIndex = 10;
+            // 
             // AddEventForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.tbDate);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.tbDeskripsi);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.dtpTanggal);
             this.Controls.Add(this.lblName);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddEventForm";
             this.Text = "AddEventForm";
             this.Load += new System.EventHandler(this.AddEventForm_Load);
@@ -140,6 +147,6 @@
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.DateTimePicker dtpTanggal;
+        private System.Windows.Forms.TextBox tbDate;
     }
 }
