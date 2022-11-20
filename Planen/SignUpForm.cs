@@ -54,15 +54,14 @@ namespace Planen
                 sql = "";
                 //cmd = null;
 
-                sql = "select * from account_insert(:_username, :_password, :_email)";
+                sql = "select * from account_insert(:_username, :_password)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_username", tbUsername.Text);
                 cmd.Parameters.AddWithValue("_password", tbPassword.Text);
-                cmd.Parameters.AddWithValue("_email", tbEmail.Text);
                 if ((int)cmd.ExecuteScalar() > 0)
                 {
                     MessageBox.Show("Selamat! Akun anda berhasil dibuat.", "well done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Account.UserID = (int)cmd.ExecuteScalar();
+                    //Account.UserID = (int)cmd.ExecuteScalar();
                     MainForm mainForm = new MainForm(account);
                     mainForm.Show();
                     this.Hide();
@@ -76,6 +75,13 @@ namespace Planen
             //MainForm mainForm = new MainForm();
             //mainForm.Show();
             //this.Hide();
+        }
+
+        private void btn_backLogin_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

@@ -77,7 +77,7 @@ namespace Planen
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
                 conn = new NpgsqlConnection(connstring);
@@ -95,6 +95,7 @@ namespace Planen
                 }
                 cmd.Dispose();
                 conn.Close();
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -120,6 +121,7 @@ namespace Planen
                 {
                     MessageBox.Show("Data Event berhasil diUpdate!", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                this.Hide();
             }
             catch (Exception ex)
             {
@@ -146,6 +148,7 @@ namespace Planen
                 {
                     MessageBox.Show("Data Event berhasil diHapus!", "Well Done!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+                this.Hide();
             }
             catch (Exception ex)
             {
